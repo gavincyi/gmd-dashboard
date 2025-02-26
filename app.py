@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 def load_data():
-    df = pd.read_csv('/workspace/GMD.csv')
+    df = pd.read_csv('GMD.csv')
     return df
 
 def main():
