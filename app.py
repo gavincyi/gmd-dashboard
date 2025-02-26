@@ -34,10 +34,10 @@ def main():
         
         # Indicator selection
         indicators = {
+            'Real GDP (USD)': 'rGDP_USD',
             'Real GDP': 'rGDP',
             'Nominal GDP': 'nGDP',
             'Real GDP per capita': 'rGDP_pc',
-            'Real GDP (USD)': 'rGDP_USD'
         }
         selected_indicator = st.selectbox(
             'Select Economic Indicator',
