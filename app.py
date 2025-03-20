@@ -34,10 +34,65 @@ def main():
         
         # Indicator selection
         indicators = {
+            # GDP and Growth
             'Real GDP (USD)': 'rGDP_USD',
             'Real GDP': 'rGDP',
             'Nominal GDP': 'nGDP',
             'Real GDP per capita': 'rGDP_pc',
+            'GDP Deflator': 'deflator',
+            
+            # Consumption and Investment
+            'Consumption': 'cons',
+            'Real Consumption': 'rcons',
+            'Consumption (% of GDP)': 'cons_GDP',
+            'Investment': 'inv',
+            'Investment (% of GDP)': 'inv_GDP',
+            'Fixed Investment': 'finv',
+            'Fixed Investment (% of GDP)': 'finv_GDP',
+            
+            # Trade
+            'Exports': 'exports',
+            'Exports (% of GDP)': 'exports_GDP',
+            'Imports': 'imports',
+            'Imports (% of GDP)': 'imports_GDP',
+            'Current Account': 'CA',
+            'Current Account (% of GDP)': 'CA_GDP',
+            'USD Exchange Rate': 'USDfx',
+            'Real Effective Exchange Rate': 'REER',
+            
+            # Government
+            'Government Expenditure': 'govexp',
+            'Government Expenditure (% of GDP)': 'govexp_GDP',
+            'Government Revenue': 'govrev',
+            'Government Revenue (% of GDP)': 'govrev_GDP',
+            'Government Tax Revenue': 'govtax',
+            'Government Tax Revenue (% of GDP)': 'govtax_GDP',
+            'Government Deficit': 'govdef',
+            'Government Deficit (% of GDP)': 'govdef_GDP',
+            'Government Debt': 'govdebt',
+            'Government Debt (% of GDP)': 'govdebt_GDP',
+            
+            # Prices and Population
+            'House Price Index': 'HPI',
+            'Consumer Price Index': 'CPI',
+            'Inflation': 'infl',
+            'Population': 'pop',
+            'Unemployment Rate': 'unemp',
+            
+            # Interest Rates and Money Supply
+            'Short-term Interest Rate': 'strate',
+            'Long-term Interest Rate': 'ltrate',
+            'Central Bank Rate': 'cbrate',
+            'M0 Money Supply': 'M0',
+            'M1 Money Supply': 'M1',
+            'M2 Money Supply': 'M2',
+            'M3 Money Supply': 'M3',
+            'M4 Money Supply': 'M4',
+            
+            # Crisis Indicators
+            'Sovereign Debt Crisis': 'SovDebtCrisis',
+            'Currency Crisis': 'CurrencyCrisis',
+            'Banking Crisis': 'BankingCrisis'
         }
         selected_indicator = st.selectbox(
             'Select Economic Indicator',
